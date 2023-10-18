@@ -1,0 +1,64 @@
+{
+    "Songs": [
+        {
+            "Title": "Purple Haze",
+            "Artist": "Jimi Hendrix",
+            "Year": 1967,
+            "Genres": ["Classic Rock", "Psychedelic Rock"]
+        },
+        {
+            "Title": "American Girl",
+            "Artist": "Tom Petty",
+            "Year": 2023,
+            "Genres": ["Classic Rock"]
+        },
+        {
+            "Title": "Under You",
+            "Artist": "Foo Fighters",
+            "Year": 1967,
+            "Genres": ["Indie, Rock"]
+        },
+        {
+            "Title": "End Up",
+            "Artist": "Sevyn Streeter",
+            "Year": 2021,
+            "Genres": ["R&B", "Pop"]
+        },
+        {
+            "Title": "Ambience",
+            "Artist": "Nia Sultana",
+            "Year": 2022,
+            "Genres": ["R&B", "Pop"]
+        },
+        {
+            "Title": "Gracias A La Vida",
+            "Artist": "Mercedes Sosa",
+            "Year": 1971,
+            "Genres": ["Argentinian Folclore"]
+        },
+        {
+            "Title": "Quizas Quizas",
+            "Artist": "Buena Vista Social Club",
+            "Year": 2008,
+            "Genres": ["Tango, Jazz"]
+        },
+        {
+            "Title": "Mean It",
+            "Artist": "6LACK",
+            "Year": 2023,
+            "Genres": ["R&B, Soul"]
+        },
+        {
+            "Title": "Bloed Zweet en Tranen",
+            "Artist": "Andre Hazes",
+            "Year": 2002,
+            "Genres": ["Volksmusik, Schlager, Pop"]
+        },
+        {
+            "Title": "Laat Mij Alleen",
+            "Artist": "Andre Hazes",
+            "Year": 1976,
+            "Genres": ["Volksmusik, Schlager, Pop"]
+        }
+    ]
+}
