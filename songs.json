@@ -16,7 +16,7 @@
             "Title": "Under You",
             "Artist": "Foo Fighters",
             "Year": 1967,
-            "Genres": ["Indie, Rock"]
+            "Genres": ["Indie", "Rock"]
         },
         {
             "Title": "End Up",
@@ -40,25 +40,25 @@
             "Title": "Quizas Quizas",
             "Artist": "Buena Vista Social Club",
             "Year": 2008,
-            "Genres": ["Tango, Jazz"]
+            "Genres": ["Tango", "Jazz"]
         },
         {
             "Title": "Mean It",
             "Artist": "6LACK",
             "Year": 2023,
-            "Genres": ["R&B, Soul"]
+            "Genres": ["R&B", "Soul"]
         },
         {
             "Title": "Bloed Zweet en Tranen",
             "Artist": "Andre Hazes",
             "Year": 2002,
-            "Genres": ["Volksmusik, Schlager, Pop"]
+            "Genres": ["Volksmusik", "Schlager", "Pop"]
         },
         {
             "Title": "Laat Mij Alleen",
             "Artist": "Andre Hazes",
             "Year": 1976,
-            "Genres": ["Volksmusik, Schlager, Pop"]
+            "Genres": ["Volksmusik", "Schlager", "Pop"]
         }
     ]
 }
