@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PS2-4</title>
+</head>
+<body>
+
+    <h1>Get Data With AJAX</h1>
+    <div id="the-data"></div>
+
+    <!-- <h1>Get Data With FETCH</h1>
+    <div id="fetch-data"></div> -->
+
+    <h1>API Chosen</h1>
+    <p>The API I selected is the Nager.Date API by Swagger which allows the user to get dates, names, 
+        and more information about public holidays for most countries around the world for specific years.<br>
+        The website I used for this is: <a href="https://date.nager.at/swagger/index.html">Swagger API Link</a> <br>
+        The parameters I used for this API request are the countrycode (in this case NL for the Netherlands) and the year. <br>
+        On the page I chose to display the local name for the holiday as well as the date which was accessed from the JSON given by
+        the API. <br>
+        This API could be very useful in a website or application where a user would want to look up holiday dates in any country
+        for example if they were planning a vacation or just for the country they live in if they wanted to make sure they got the right date
+        for certain holidays. This API could also be useful for getting the English and local names of international holidays
+        as the JSON with infomation returns both of these alongside other information.
+    </p>
+
+    <img src="CS120_Postman_Screenshot.jpg" alt="screenshot" style="width: 50%; height: auto;">
+<script>
+    api_url = "https://date.nager.at/api/v3/PublicHolidays/2023/NL";
+    function requestData_AJAX() {
+        var reqObj = new XMLHttpRequest();
+        if (!reqObj) {
+            alert("Error: can't create HTTP request object"); 
+            return;
+        }
+        reqObj.onreadystatechange = function () {
+            if (reqObj.readyState == 4 && reqObj.status == 200) {
+                var data = reqObj.responseText;
+                var info = JSON.parse(data);
+
+                data_display = document.getElementById("the-data");
+                data_display.innerHTML = format(info);
+            }
+        };
+        reqObj.open("GET", api_url, true);
+        reqObj.send();
+    }
+
+    // function requestData_Fetch() {
+    //     fetch(api_url)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             data_display = document.getElementById("fetch-data");
+    //             data_display.innerHTML = format(data);
+    //         })
+    //         .catch(error => {
+    //             alert(error);
+    //             console.log(error);
+    //         });
+    // }
+
+    function format(data) {
+        var format = '<ul>';
+        for (i = 0; i < data.length; i++) {
+            //write to format with the dat and local name from the JSON
+            format += '<li>' + data[i].date + ': ' + data[i].localName + '</li>';
+        }
+        format += '</ul>';
+        return format;
+    }
+    
+    requestData_AJAX();
+    // requestData_Fetch();
+</script>
+
+</body>
+</html>
